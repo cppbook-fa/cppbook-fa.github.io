@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title> دانلود رایگان کتاب آموزش C++</title>
+  <meta charset="UTF-8" />
+  <title>دانلود رایگان کتاب آموزش C++</title>
   <style>
     body {
       font-family: Tahoma, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
+      background-color: #fff; /* white background */
+      color: #000; /* black text */
       text-align: center;
       padding: 50px 20px;
       margin: 0;
     }
     .container {
-      background-color: #1e1e1e;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-      max-width: 500px;
+      background-color: #fff; /* white container */
+      padding: 40px 35px;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12); /* subtle black shadow */
+      max-width: 520px;
       margin: auto;
     }
+    h1, h4, p {
+      color: #000; /* black text */
+      margin: 0 0 20px 0;
+    }
     h1 {
-      color: #ffffff;
-      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-bottom: 14px;
+    }
+    h4 {
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 26px;
     }
     p {
       font-size: 16px;
-      margin-bottom: 20px;
+      line-height: 1.6;
+      margin-bottom: 28px;
     }
     .book-cover {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-    a.download-button {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    a.download-button:hover {
-      background-color: #45a049;
-    }
-        .book-cover {
       width: 130px;
       height: 200px;
       object-fit: cover;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      margin-bottom: 28px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      /* No grayscale filter here */
+    }
+    .book-cover:hover {
+      transform: scale(1.06);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+    }
+    a.download-button {
+      display: inline-block;
+      padding: 16px 42px;
+      background-color: #000; /* black button */
+      color: #fff; /* white text */
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 20px;
+      box-shadow: 0 7px 24px rgba(0, 0, 0, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    a.download-button:hover {
+      background-color: #222; /* dark gray on hover */
+      box-shadow: 0 9px 28px rgba(34, 34, 34, 0.6);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1> کتاب آموزش ++C</h1>
-    <h4> مولف: سید ایمان علوی فاضل</h4>
-    <img src="cover.jpg" alt="جلد کتاب" class="book-cover">
+    <h1>کتاب آموزش ++C</h1>
+    <h4>مولف: سید ایمان علوی فاضل</h4>
+    <img src="cover.jpg" alt="جلد کتاب" class="book-cover" />
     <p>برای دانلود کتاب روی دکمه زیر کلیک کنید:</p>
-    <a class="download-button" href="https://github.com/cppbook-fa/cppbook-fa.github.io/raw/main/book.pdf" download> دانلود کتاب</a>
+    <a
+      class="download-button"
+      href="https://github.com/cppbook-fa/cppbook-fa.github.io/raw/main/book.pdf"
+      download
+    >
+      دانلود کتاب
+    </a>
   </div>
 </body>
 </html>
+
